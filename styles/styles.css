@@ -1,0 +1,198 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p,span,h2,li{
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-family: 'Monoton', cursive;
+}
+header{
+    text-align: center;
+}
+.headicon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+}
+.buscar{
+    
+    width: 50%;
+    text-align: center;
+}
+.buscar input{
+    border-color: orangered;
+        position: relative;
+        text-align: left;
+        width: 50%;
+        padding: 10px;
+}
+.buscar i{
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 10px;
+}
+header nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+header nav a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.menu{
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.menu:hover .submenu{
+    display: block;
+}
+.sub{
+    background-image:url(../images/banners/mens-banner.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.texto{
+    background-image: url(../images/banners/banner-1.jpg);
+    background-repeat: none;
+    background-size: 100%;
+    height: 600px;
+    text-align: left;
+    padding: 20px;
+}
+.texto h2{
+    margin-top: 20px;
+}
+.texto p:first-child{
+    color: pink; 
+    margin-top: 100px; 
+}
+.texto button{
+    background-color: palevioletred;
+    border: none;
+    height: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color:white
+}
+main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.card1{
+    width: 300px;
+    background-color: whitesmoke;
+    height: 500px;
+    padding: 10px;
+}
+.color{
+    color: pink;
+}
+.card1 div:last-child{
+    
+    margin-top: 50px;
+}
+.tachar{
+    text-decoration: line-through
+}
+.card1 button{
+    margin-left:60px;
+    background-color: orange;
+    color: white;
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+}
+.icon{
+    margin-top:30px; 
+}
+.clip{
+    position: absolute;
+    background-color: orangered;
+    display: inline-block;
+    height: 50px;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    text-align: center;
+    line-height:50px;
+;
+
+}
+.card1 img{
+    width: 100%;
+}
+footer{
+ padding: 20px;
+ background-color: black;
+}
+dl{
+    display: flex;
+    color: white;
+}
+.listas{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+ul{
+    text-decoration: none;
+}
+li{
+   list-style: none;
+   padding: 2px;
+}
+li span{
+    border-bottom: 3px solid crimson;
+}
+.pay{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pay p{
+    color: white;
+    padding: 5px;
+}
+@media (max-width: 576px){
+	.texto{
+        display: none;
+}
+    main{
+        grid-template-columns: auto ;
+        justify-content: center;
+    }
+}
