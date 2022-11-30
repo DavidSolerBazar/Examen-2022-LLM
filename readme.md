@@ -4,5 +4,8 @@
 ## Descricion
 Pagina de venta d productos
 
-## Link
+## Link github
+https://github.com/DavidSolerBazar/Examen-2022-LLM.git
+## Link netlify
+https://llmexamen.netlify.app/
 
